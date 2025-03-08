@@ -1,0 +1,42 @@
+
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Bem-vindo ao Acervo da Biblioteca</h1>
+            <p>Aqui estão os livros cadastrados em nossa biblioteca</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">Lista de Livros</h2>
+                <!-- Tabela de livros -->
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Título</th>
+                            <th scope="col">Autor</th>
+                            <th scope="col">Ano de Publicação</th>
+                            <th scope="col">Gênero</th>
+                            <th scope="col">Quantidade Disponível</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Laço para inserir os dados dos livros a partir do banco -->
+                        <!-- Exemplo de como os dados podem ser renderizados, você pode substituir esse código pelo seu laço -->
+                        
+                        {{#each livros}}
+                        <tr>
+                            <td>{{this.titulo}}</td>
+                            <td>{{this.autor}}</td>
+                            <td>{{this.ano_publicacao}}</td>
+                            <td>{{this.genero}}</td>
+                            <td>{{this.disponivel}}</td>
+                        </tr>
+                        {{/each}}
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>

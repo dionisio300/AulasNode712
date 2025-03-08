@@ -1,0 +1,29 @@
+
+<h1>Olá {{user.nome}} {{user.sobreNome}}</h1>
+<p>Vejo que você tem {{user.idade}} anos de idade </p>
+<p>Seu email é: {{user.email}}</p>
+
+{{#if autenticacao}}
+<p>Você está autenticada, pode acessar o sistema no seguinte link</p>
+<a href="/pg1">Click aqui</a>
+
+    {{#if habilitado}}
+    <p>Você pode dirigir</p>
+    {{/if}}
+
+<h2>Suas atividadas de hoje serão:</h2>
+
+<ul>
+
+{{#each listaAtividades}}
+    <li>{{this}}</li>
+{{/each}}
+
+</ul>
+
+{{else}}
+<p>Você não está autententicado, por favor faça o seu cadastro clicando  <a href="/pg2">aqui</a></p>
+
+
+{{/if}}
+

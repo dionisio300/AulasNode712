@@ -1,0 +1,37 @@
+<h1>Cadastrar produto</h1>
+
+<div class="container bg-success">
+    <div class="row">
+        <div class="col-8">
+
+            <form action="/cadastro" method="POST">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome: </label>
+                    <input type="text" class="form-control" id="nome" name="nomeProduto" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="descricao" class="form-label">Descrição: </label>
+                    <input type="text" class="form-control" id="descricao" name="descricaoProduto" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="preco" class="form-label">Preço: </label>
+                    <input type="number" class="form-control" id="preco" name="precoProduto" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="estoque" class="form-label">Estoque: </label>
+                    <input type="number" class="form-control" id="estoque" name="estoqueProduto" placeholder="">
+                </div>
+                <div class="mb-3">
+
+                    <label for="categoria" class="form-label">Categoria: </label>
+                    <input type="number" class="form-control" id="categoria" name="categoriaProduto" placeholder="">
+                </div>
+
+                <input class="btn btn-info" type="submit" value="Enviar">
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

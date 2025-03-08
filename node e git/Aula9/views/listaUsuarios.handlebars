@@ -1,0 +1,18 @@
+<h1>Pagina de listagem de usuarios</h1>
+
+{{#if autenticado}}
+    <h1>Usuario autenticado</h1>
+    {{#each usuarios}}
+       <hr>
+       <div style="display: flex;">
+        <p class="">Nome: {{this.nome}}</p>
+        <p class="mx-5">Idade: {{this.idade}}</p>
+        <p>Telefone: {{this.telefone}}</p>
+       </div>
+       
+    {{/each}}
+    <hr>
+{{else}}
+    <h1>Usuario não autenticado acessa a página de cadastro clicando <a href="/pg2">aqui</a></h1>
+
+{{/if}}

@@ -1,0 +1,37 @@
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="/cadastrarLivro" method="POST">
+                    <div class="mb-3">
+                        <label for="titulo" class="form-label">Título do Livro</label>
+                        <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Ex: Dom Casmurro" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="autor" class="form-label">Autor</label>
+                        <input type="text" class="form-control" id="autor" name="autor" placeholder="Ex: Machado de Assis" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ano_publicacao" class="form-label">Ano de Publicação</label>
+                        <input type="number" class="form-control" id="ano_publicacao" name="ano_publicacao" placeholder="Ex: 1899" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="genero" class="form-label">Gênero</label>
+                        <input type="text" class="form-control" id="genero" name="genero" placeholder="Ex: Romance" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="disponivel" class="form-label">Quantidade Disponível</label>
+                        <input type="number" class="form-control" id="disponivel" name="disponivel" min="0" value="0" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Cadastrar Livro</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+

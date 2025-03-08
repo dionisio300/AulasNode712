@@ -1,0 +1,16 @@
+<h1>Olá {{usuario.nome}} sua idade é {{usuario.idade}}</h1>
+{{#if usuario.autenticado}}
+<p>Bem vindo {{usuario.nome}}</p>
+
+<ul>
+    {{#each listaTarefas}}
+        <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+
+
+{{else}}
+<p>Você não tem permissão para acessar essa página</p>
+
+{{/if}}

@@ -1,0 +1,50 @@
+<h1>Atualizar Produto</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form action="/atualizar" method="POST">
+                <label for="idProduto">Digite o ID do produto para editar
+                </label>
+                <input type="text" name="id">
+                <input type="submit" value="Enviar">
+            </form>
+            {{#if carregarForm}}
+            <form action="/fazerUpdate", method="post">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome: </label>
+                    <input type="text" class="form-control" value="{{produto.nome}}" id="nome" name="nomeProduto" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="descricao" class="form-label">Descrição: </label>
+                    <input type="text" class="form-control" value="{{produto.descricao}}" id="descricao" name="descricaoProduto" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="preco" class="form-label">Preço: </label>
+                    <input type="number" class="form-control" value="{{produto.preco}}" id="preco" name="precoProduto" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="estoque" class="form-label">Estoque: </label>
+                    <input type="number" class="form-control" value="{{produto.estoque}}" id="estoque" name="estoqueProduto" placeholder="">
+                </div>
+                <div class="mb-3">
+
+                    <label for="categoria" class="form-label">Categoria: </label>
+                    <input type="text" class="form-control" id="categoria" value="{{produto.categoria}}" name="categoriaProduto" placeholder="">
+                </div>
+
+                <div class="mb-3">
+
+                    <label for="id" class="form-label">Id: </label>
+                    <input type="text" class="form-control" id="id" value="{{produto.id}}" name="id" placeholder="">
+                </div>
+
+
+                <input class="btn btn-info" type="submit" value="Enviar">
+            </form>
+            
+            {{/if}}
+
+        </div>
+    </div>
+</div>
