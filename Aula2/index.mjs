@@ -74,24 +74,23 @@ let carrinho = [
     {nome:'Monitor', preco:600}
 ]
 
-while(true){
 
-    rl.question('1 - Cadastrar produto\n2 - Criar Carrinho\n3 - Mostrar total\n4 - Exibir Resumo da compra\n',(resposta)=>{
-        if (resposta == '1'){
-            cadastrarProduto(produtos)
-        }
-        else if (resposta == '2'){
-            criarCarrinho(produtos,carrinho)
-        }
-        else if (resposta == '3'){
-            mostrarTotal(carrinho)
-        }
-        else if (resposta == '4'){
-            mostrarCompras(carrinho)
-        }
-    })
+rl.question('1 - Cadastrar produto\n2 - Criar Carrinho\n3 - Mostrar total\n4 - Exibir Resumo da compra\n',(resposta)=>{
+    if (resposta == '1'){
+        cadastrarProduto(produtos)
+    }
+    else if (resposta == '2'){
+        criarCarrinho(produtos,carrinho)
+    }
+    else if (resposta == '3'){
+        mostrarTotal(carrinho)
+    }
+    else if (resposta == '4'){
+        mostrarCompras(carrinho)
+    }
+})
 
-}
+console.log('nova alteração')
 
 
 
